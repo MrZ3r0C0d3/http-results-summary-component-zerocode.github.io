@@ -112,8 +112,8 @@ border-radius: 8px;
 }
 #result-box p {
   padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 #data-table tbody{
     display: grid;
