@@ -1,0 +1,150 @@
+* {
+  /* border: 1px solid red; */
+  font-family: "HankenGrotesk";
+}
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
+}
+p {
+  font-size: 18px;
+}
+
+#summary-box {
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.42);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.42);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  #summary-box {
+    grid-template-columns: 1fr;
+    height: unset;
+  }
+}
+
+#result-box {
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 100%
+  );
+}
+
+#data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#data-table tr {
+    padding: 8px;
+display: grid;
+grid-template-columns: 0.3fr 1.5fr 1fr;
+border-radius: 8px;
+}
+
+#btn-continue {
+  width: 100%;
+  height: 50px;
+  border-radius: 40px;
+  background-color: hsl(224, 30%, 27%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+#btn-continue:hover{
+    background: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%) 0%,
+    hsl(241, 81%, 54%) 100%
+  );
+  
+}
+
+#score-box {
+  margin: 0 30px;
+}
+
+#score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+.light-grey {
+  color: hsla(0, 0%, 85%);
+}
+.light-grey2{
+    color: hsla(0, 0%, 70%);
+}
+#result-box p {
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#data-table tbody{
+    display: grid;
+    row-gap: 10px;
+
+}
+.score{
+    text-align: end;
+    padding-right: 5px;
+}
+#Reaction{
+    background-color: hsl(0, 100%, 98%);
+}
+#Memory{
+    background-color: hsl(39, 100%, 98%);
+}
+#Verbal{
+    background-color: hsl(166, 100%, 98%);
+}
+#Visual{
+    background-color: hsl(234, 85%, 98%);
+}
+#Reaction .category{
+    color: hsl(0, 100%, 67%);
+}
+#Memory .category{
+    color: hsl(39, 100%, 56%);
+}
+#Verbal .category{
+    color: hsl(166, 100%, 37%);
+}
+#Visual .category{
+    color: hsl(234, 85%, 45%);
+}
